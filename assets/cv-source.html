@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Jose Luis Ortiz Sánchez — CV</title>
+<style>
+  @page { size: Letter; margin: 8mm 16mm; }
+
+  :root {
+    --accent: #4453c9;
+    --accent-2: #0f766e;
+    --ink: #16181f;
+    --sub: #4b5165;
+    --line: #dde1ea;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    font-size: 9.6pt;
+    line-height: 1.26;
+    background: #ffffff;
+  }
+
+  .cv { max-width: 100%; }
+
+  header.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2.5px solid var(--accent);
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+  }
+  .name-block h1 {
+    font-size: 18.5pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .name-block .role {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 1px;
+  }
+  .contact-block {
+    text-align: right;
+    font-size: 8.3pt;
+    color: var(--sub);
+    line-height: 1.45;
+  }
+  .contact-block a { color: var(--sub); text-decoration: none; }
+
+  section { margin-bottom: 6px; }
+
+  h2.section-title {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 4px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .profile-text { color: var(--ink); font-size: 9.4pt; text-align: justify; }
+
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9.2pt;
+  }
+  .edu-row .edu-title { font-weight: 600; }
+  .edu-row .edu-date { color: var(--sub); white-space: nowrap; margin-left: 12px; }
+  .edu-org { color: var(--sub); font-size: 8.9pt; }
+
+  .job { margin-bottom: 4px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .job-title { font-weight: 700; font-size: 9.6pt; }
+  .job-date { font-size: 8.3pt; color: var(--sub); white-space: nowrap; margin-left: 12px; }
+  .job-org { font-size: 8.9pt; color: var(--accent-2); font-weight: 600; margin-bottom: 1px; }
+  ul.job-bullets { padding-left: 14px; margin-top: 2px; }
+  ul.job-bullets li { font-size: 8.9pt; margin-bottom: 0; }
+  .job-stack { font-size: 8.1pt; color: var(--sub); margin-top: 2px; }
+  .job-stack strong { color: var(--ink); font-weight: 600; }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .project-item { font-size: 8.9pt; }
+  .project-item .p-title { font-weight: 700; }
+  .project-item .p-title a { color: var(--ink); text-decoration: none; }
+  .project-item .p-desc { color: var(--sub); font-size: 8.5pt; margin-top: 1px; }
+  .project-item .p-stack { font-size: 8pt; color: var(--accent-2); margin-top: 1px; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 24px;
+  }
+  .skill-row { font-size: 8.9pt; margin-bottom: 2px; }
+  .skill-row .skill-label { font-weight: 700; color: var(--ink); }
+  .skill-row .skill-values { color: var(--sub); }
+
+  footer.avail {
+    margin-top: 4px;
+    font-size: 8.3pt;
+    color: var(--accent);
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid var(--line);
+    padding-top: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="cv">
+
+  <header class="cv-header">
+    <div class="name-block">
+      <h1>Jose Luis Ortiz Sánchez</h1>
+      <div class="role">Fullstack Developer — Backend (Laravel · NestJS)</div>
+    </div>
+    <div class="contact-block">
+      Bogotá D.C, Colombia<br>
+      +57 320 973 4130 &nbsp;·&nbsp; contacto@luisjdev.com<br>
+      luisjdev.com &nbsp;·&nbsp; github.com/luisjdev0<br>
+      linkedin.com/in/jose-luis-ortiz-sanchez-33a4a8215
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Perfil profesional</h2>
+    <p class="profile-text">
+      Fullstack Software Engineer con más de 4 años de experiencia desarrollando aplicaciones web y móviles
+      escalables para clientes en Colombia, Estados Unidos y más de siete países de Latinoamérica y Europa.
+      Actualmente enfocado en desarrollo backend con <strong>Laravel</strong> y <strong>NestJS</strong>, con
+      base sólida en <strong>PHP</strong>, <strong>Node.js</strong>, <strong>React</strong> y <strong>Flutter</strong>,
+      arquitectura de APIs REST, bases de datos relacionales y no relacionales, e integración de servicios
+      de <strong>IA</strong> (OpenAI, Anthropic/Claude) en producción.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Educación</h2>
+    <div class="edu-row">
+      <span class="edu-title">Ingeniería de Sistemas <span style="font-weight:400;color:var(--sub);">(en curso)</span></span>
+      <span class="edu-date">Sep 2021 — Dic 2026</span>
+    </div>
+    <div class="edu-org">Institución Universitaria de Colombia</div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Experiencia laboral</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Desarrollador Backend</span>
+        <span class="job-date">FEB 2026 — PRESENTE</span>
+      </div>
+      <div class="job-org">Innovasoft Colombia · Jornada completa · Presencial, Bogotá</div>
+      <ul class="job-bullets">
+        <li>Desarrollo backend enfocado en Laravel y NestJS: diseño de APIs, lógica de negocio y mantenimiento de servicios en producción dentro del equipo de ingeniería.</li>
+      </ul>
+      <div class="job-stack"><strong>Stack:</strong> Laravel, NestJS, PHP</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Fullstack Developer · Freelancer</span>
+        <span class="job-date">NOV 2024 — FEB 2026 (CONTRACTOR)</span>
+      </div>
+      <div class="job-org">Independiente · Remoto internacional</div>
+      <ul class="job-bullets">
+        <li>Desarrollo de aplicaciones web y móviles desde cero, gestionando el ciclo completo: análisis, desarrollo, despliegue y soporte.</li>
+        <li>Comunicación directa con clientes y entrega bajo plazos definidos, con valoraciones de 5 estrellas.</li>
+        <li>Clientes en Ecuador, Perú, Puerto Rico, República Dominicana, Chile, Argentina y España.</li>
+      </ul>
+      <div class="job-stack"><strong>Stack:</strong> Flutter, React, Next.js, Nuxt.js, Node.js, MongoDB, Redis</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Fullstack Developer</span>
+        <span class="job-date">NOV 2024 — DIC 2025 (CONTRACTOR)</span>
+      </div>
+      <div class="job-org">InnClod S.A.S · Remoto</div>
+      <ul class="job-bullets">
+        <li>Desarrollo, mantenimiento y soporte de múltiples proyectos activos para distintos clientes.</li>
+        <li>Diseño y consumo de APIs REST, optimización de consultas MySQL y gestión continua de requerimientos técnicos.</li>
+      </ul>
+      <div class="job-stack"><strong>Stack:</strong> PHP, Laravel, MySQL, JavaScript, jQuery, Vue, Linux</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Fullstack Developer</span>
+        <span class="job-date">NOV 2024 — ABR 2025 (CONTRACTOR)</span>
+      </div>
+      <div class="job-org">Webtronick · Remoto, Estados Unidos</div>
+      <ul class="job-bullets">
+        <li>Desarrollo de una plataforma de gestión para una cadena de barberías en EE.UU.: turnos, pagos y nómina.</li>
+        <li>APIs REST y frontend en React, trabajo en equipo remoto bajo metodología Scrum.</li>
+      </ul>
+      <div class="job-stack"><strong>Stack:</strong> Node.js, React, React Native, Laravel, PostgreSQL</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Fullstack Developer</span>
+        <span class="job-date">DIC 2021 — NOV 2024</span>
+      </div>
+      <div class="job-org">Bersoft S.A.S · Bogotá, Colombia</div>
+      <ul class="job-bullets">
+        <li>Desarrollo y mantenimiento de plataformas para instituciones de educación superior.</li>
+        <li>Implementación de módulos académicos/administrativos, control de roles y permisos, optimización de consultas MySQL y despliegue en Linux.</li>
+      </ul>
+      <div class="job-stack"><strong>Stack:</strong> PHP, MySQL, Vue, JavaScript, HTML, CSS, Linux</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Proyectos destacados</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <div class="p-title"><a href="https://play.google.com/store/apps/details?id=com.luisjdev.libros">Libros en Español</a> — Google Play</div>
+        <div class="p-desc">Catálogo de libros en español con actualización diaria automática. +58k libros de +17k autores distintos.</div>
+        <div class="p-stack">Flutter · Node.js · Python · MySQL</div>
+      </div>
+      <div class="project-item">
+        <div class="p-title"><a href="https://play.google.com/store/apps/details?id=com.luisjdev.pretty_qr">PrettyQR</a> — Google Play</div>
+        <div class="p-desc">Generador de códigos QR personalizados: formas, colores, degradados e ícono central personalizado.</div>
+        <div class="p-stack">Flutter · Node.js</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Aptitudes y habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-label">Main Stack:</span> <span class="skill-values">PHP (Laravel), Node.js, React, TypeScript, Flutter</span></div>
+      <div class="skill-row"><span class="skill-label">Frontend:</span> <span class="skill-values">HTML, CSS, JavaScript, React, Vue, Next.js, Nuxt.js, Tailwind</span></div>
+      <div class="skill-row"><span class="skill-label">Backend:</span> <span class="skill-values">Laravel, Express, NestJS</span></div>
+      <div class="skill-row"><span class="skill-label">Bases de datos:</span> <span class="skill-values">MySQL, PostgreSQL, MongoDB, Redis, SQL Server</span></div>
+      <div class="skill-row"><span class="skill-label">Inteligencia Artificial:</span> <span class="skill-values">OpenAI API, Anthropic, Claude Code, Integración de LLMs, Prompt Engineering</span></div>
+      <div class="skill-row"><span class="skill-label">DevOps &amp; herramientas:</span> <span class="skill-values">Docker, Git, Linux (Ubuntu), AWS, Firebase</span></div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
